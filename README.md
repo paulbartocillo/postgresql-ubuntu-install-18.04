@@ -65,3 +65,39 @@ Create Database using stark role and without switching a system user account
 Accessing database with stark role given you created a stark_db using stark role
 
 `$ sudo -u stark psql -d stark_db`
+
+## Caveats: How to enable remote connection on postgres database
+
+Login as postgres user
+
+`$ sudo -i -u postgres`
+
+Edit the file pg_hba.conf:
+
+`$ sudo vim /var/lib/postgresql/9.5/main/pg_hba.conf`
+
+or
+
+`$ sudo vim /etc/postgresql/8.2/main/pg_hba.conf`
+
+Append the following configuration lines to give access to 10.10.29.0/24 (YOUR OWN IP) network:
+
+`host all all 10.10.29.0/24 trust`
+
+You need to enable TCP / IP networking for postgres
+
+Edit the file postgresql.conf:
+
+`$ sudo vim /var/lib/postgresql/9.5/main/postgresql.conf`
+
+or
+
+`$ sudo vim /etc/postgresql/8.2/main/postgresql.conf`
+
+Find configuration line that read as follows:
+
+`listen_addresses='localhost'`
+
+Change the value to "*" or "SPECIFIC-IP"
+
+`listen_addresses='*'` or `listen_addresses='10.10.29.0 10.20.0.0'`
