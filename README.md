@@ -84,7 +84,7 @@ Append the following configuration lines to give access to 10.10.29.0/24 (YOUR O
 
 `host all all 10.10.29.0/24 trust`
 
-You need to enable TCP / IP networking for postgres
+### You need to enable TCP / IP networking for postgres
 
 Edit the file postgresql.conf:
 
