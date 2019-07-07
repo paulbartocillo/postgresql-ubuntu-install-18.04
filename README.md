@@ -78,7 +78,7 @@ Edit the file pg_hba.conf:
 
 or
 
-`$ sudo vim /etc/postgresql/8.2/main/pg_hba.conf`
+`$ sudo vim /etc/postgresql/9.5/main/pg_hba.conf`
 
 Append the following configuration lines to give access to 10.10.29.0/24 (YOUR OWN IP) network:
 
@@ -92,7 +92,7 @@ Edit the file postgresql.conf:
 
 or
 
-`$ sudo vim /etc/postgresql/8.2/main/postgresql.conf`
+`$ sudo vim /etc/postgresql/9.5/main/postgresql.conf`
 
 Find configuration line that read as follows:
 
