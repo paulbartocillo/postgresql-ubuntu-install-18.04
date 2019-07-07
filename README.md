@@ -101,3 +101,13 @@ Find configuration line that read as follows:
 Change the value to "*" or "SPECIFIC-IP"
 
 `listen_addresses='*'` or `listen_addresses='10.10.29.0 10.20.0.0'`
+
+### Restart PostgreSQL
+
+`$ sudo service postgresql restart`
+
+or 
+
+`$ sudo su`
+
+`$ /etc/init.d/postgresql restart`
