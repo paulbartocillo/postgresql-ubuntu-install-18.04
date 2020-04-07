@@ -129,4 +129,5 @@ or
 
 `psql -h companyx.ap-southeast-1.rds.amazonaws.com -U companyx -d companyx`
 
-
+### Troubleshoot
+https://installvirtual.com/install-postgresql-11-on-amazon-linux-compile/
