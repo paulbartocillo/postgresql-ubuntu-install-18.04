@@ -111,3 +111,20 @@ or
 `$ sudo su`
 
 `$ /etc/init.d/postgresql restart`
+
+# How To Install and Use PostgreSQL on Amazon Linux 2
+
+`sudo yum update -y`
+
+`sudo amazon-linux-extras install postgresql11`
+
+`yum clean metadata`
+
+`yum install postgresql`
+
+
+## Extras: How to connect remotely on rds postgres server
+
+`psql -h bmnl-inventory-encrypted-db.cchvpbiqxojc.ap-southeast-1.rds.amazonaws.com -U beautymnlsite -d beautymnlsite`
+
+
