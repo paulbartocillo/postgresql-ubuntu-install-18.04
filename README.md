@@ -122,6 +122,8 @@ or
 
 `yum install postgresql`
 
+`psql --version`
+
 
 ## Extras: How to connect remotely on rds postgres server
 
