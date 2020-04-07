@@ -125,6 +125,6 @@ or
 
 ## Extras: How to connect remotely on rds postgres server
 
-`psql -h bmnl-inventory-encrypted-db.cchvpbiqxojc.ap-southeast-1.rds.amazonaws.com -U beautymnlsite -d beautymnlsite`
+`psql -h companyx.ap-southeast-1.rds.amazonaws.com -U companyx -d companyx`
 
 
