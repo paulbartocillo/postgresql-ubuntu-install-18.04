@@ -125,9 +125,14 @@ or
 `psql --version`
 
 
-## Extras: How to connect remotely on rds postgres server
+## Extras:
+
+### How to connect remotely on rds postgres server
 
 `psql -h companyx.ap-southeast-1.rds.amazonaws.com -U companyx -d companyx`
+
+### How to get the size of db
+`SELECT pg_size_pretty( pg_database_size('dbname'));`
 
 ### Troubleshoot
 https://installvirtual.com/install-postgresql-11-on-amazon-linux-compile/
