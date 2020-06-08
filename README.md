@@ -136,3 +136,6 @@ or
 
 ### Troubleshoot
 https://installvirtual.com/install-postgresql-11-on-amazon-linux-compile/
+
+### Resources
+https://www.compose.com/articles/postgresql-tips-installing-the-postgresql-client/
